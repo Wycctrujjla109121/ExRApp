@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/root_elemetn"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/fone" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/montaga"
+            android:text="ExrApp"
+            android:textAlignment="center"
+            android:textColor="@color/Yellow"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress3"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@android:color/transparent"
+            android:hint="Логин"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="24dp"
+            android:typeface="normal" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:hint="Пароль"
+            android:textSize="24dp"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"
+            android:textColor="@color/design_default_color_primary_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/buttonLog"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Yellow"
+            android:fontFamily="@font/montaga"
+            android:text="@string/SignIn"
+
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/buttonReg"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:backgroundTint="@color/Yellow"
+            android:fontFamily="@font/montaga"
+            android:text="@string/Registr"
+            android:textColor="@color/Yellow" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
